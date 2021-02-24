@@ -1,0 +1,418 @@
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0px;
+        font-family: 'Roboto', sans-serif;
+    }
+    /* ========= menu ======== */
+    
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto
+    }
+    /* body {
+    margin: 0;
+    overflow-x: hidden
+} */
+    
+    header {
+        width: 100%;
+        display: table;
+        background-color: #002e5b;
+        margin-bottom: 50px;
+        position: fixed;
+        z-index: 1000;
+    }
+    
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto
+    }
+    
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1140px
+        }
+    }
+    
+    #logo {
+        float: left;
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #fffab2;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 11px 0
+    }
+    
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 7px
+    }
+    
+    nav ul {
+        display: table;
+        float: right;
+        margin: 0;
+        padding: 0
+    }
+    
+    nav ul li {
+        float: left;
+        list-style-type: none
+    }
+    
+    nav ul li:last-child {
+        padding-right: 0
+    }
+    
+    nav ul li a {
+        color: #e4f2ff;
+        font-size: 19px;
+        padding: 7px 19px;
+        display: inline-block;
+        text-decoration: none
+    }
+    
+    nav ul li a:hover {
+        background-color: #143a06;
+        color: #fff9c8;
+        text-decoration: underline
+    }
+    
+    .toggle-menu ul {
+        display: table;
+        width: 31px;
+        margin-left: 0;
+        padding-left: 0;
+        margin: 5px
+    }
+    
+    .toggle-menu ul li {
+        width: 100%;
+        height: 3px;
+        background-color: #e9f0f7;
+        margin-bottom: 4px;
+        list-style: none
+    }
+    
+    .toggle-menu ul li:last-child {
+        margin-bottom: 0
+    }
+    
+    input[type=checkbox],
+    label {
+        display: none
+    }
+    
+    @media only screen and (max-width: 980px) {
+        header {
+            padding: 20px 0
+        }
+        #logo {
+            padding: 0
+        }
+        input[type=checkbox] {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            background: none
+        }
+        input[type=checkbox]:fous {
+            background: none
+        }
+        label {
+            float: right;
+            display: inline-block;
+            cursor: pointer;
+            margin-right: 25px
+        }
+        input[type=checkbox]:checked~nav {
+            display: block
+        }
+        nav {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 50px;
+            background-color: #002e5b;
+            padding: 0;
+            z-index: 99
+        }
+        nav ul {
+            width: auto
+        }
+        nav ul li {
+            float: none;
+            padding: 0;
+            width: 100%;
+            display: table
+        }
+        nav ul li a {
+            color: #FFF;
+            font-size: 15px;
+            padding: 10px 20px;
+            display: block;
+            border-bottom: 1px solid rgba(225, 225, 225, 0.1)
+        }
+    }
+    
+    @media only screen and (max-width: 360px) {
+        label {
+            padding: 5px 0
+        }
+        #logo {
+            font-size: 20px
+        }
+        nav {
+            top: 47px
+        }
+    }
+    /* ========= /menu ======== */
+    /* ========= tittle-img ======== */
+    
+    .tittle-img img {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    /* ========= /tittle-img ======== */
+    /* ========= intro ======== */
+    
+    .intro {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .intro-text-1 {}
+    /* ========= /intro ======== */
+    /* ========= Experience ======== */
+    
+    .full-block-bg {
+        background-color: #fafafa;
+    }
+    
+    .experience {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    
+    .experience-element {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .experience-element .experience-element-skill {
+        background-color: #fff;
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+        margin-left: 5px;
+    }
+    
+    .experience-element .experience-element-skill:first-child {
+        margin-left: 0px;
+    }
+    
+    .experience-element-skill {
+        padding: 20px;
+    }
+    
+    .experience-element-skill img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .experience-element-skill:hover {
+        transform: scale(1.02);
+        background-color: #17bed1;
+        border: 1px solid;
+        transition: linear 0.2s;
+    }
+    /* ========= /Experience ======== */
+    /* ========= Works ======== */
+    
+    .works {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: auto;
+        width: 100%;
+    }
+    
+    .slider-works .works-item-slide img {
+        width: 100%;
+    }
+    /* ========= /Works ======== */
+    /* ========= Biography ======== */
+    
+    .biography {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 100%;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .biography-item {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+    }
+    
+    .button-biography {
+        text-decoration: none;
+        color: #000;
+        background-color: #fafafa;
+        padding: 10px;
+        border-radius: 3px;
+        border: 1px solid #000;
+    }
+    
+    .button-biography:hover {
+        background-color: #17bed1;
+        transition: linear 0.1s;
+    }
+    /* ========= /Biography ======== */
+    /* ========= page:Biography ======== */
+    /* ========= Biography ======== */
+    /* .image-bg {
+    background-image: url(/Users/zovtopuz/Documents/projectVue/redstor/img/1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    height: 100%;
+    width: 100%;
+} */
+    
+    .image-bg img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .biography-title {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .button-biography-page {
+        width: auto;
+        height: 40px;
+        margin-top: 13px;
+        margin-left: 10px;
+        border-radius: 4px;
+        background-color: #fafafa;
+        border: 1px solid;
+    }
+    
+    .button-biography-page:hover {
+        background-color: #17bed1;
+        transition: linear .2s;
+    }
+    /* ========= /Biography ======== */
+    /* ========= page: Resume ======== */
+    /* ========= resume ======== */
+    
+    .resume-page {
+        text-align: center;
+    }
+    /* ========= resume ======== */
+    /* ========= Table poss ======== */
+    
+    .table-position {
+        display: flex;
+        justify-content: center;
+    }
+    
+    tr:nth-child(2n+1) {
+        background-color: #fff;
+        font-size: 30px;
+    }
+    
+    tr:nth-child(2n) {
+        background-color: #d3d3d3;
+        font-size: 30px;
+    }
+    
+    .resume-text {
+        padding-top: 20px;
+    }
+    /* ========= /Table poss ======== */
+    /* ========= footer ======== */
+    
+    .footer-component {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        text-align: center;
+    }
+    /* ========= /footer ======== */
+    /* ========= media ======== */
+    
+    @media only screen and (max-width: 980px) {
+        .intro {
+            grid-template-columns: 100%;
+        }
+        .experience {
+            grid-template-columns: 100%;
+        }
+        .works {
+            grid-template-columns: 100%;
+        }
+        .biography {
+            grid-template-columns: 100%;
+        }
+        .biography-item:last-child {
+            padding-top: 40px;
+        }
+    }
+    
+    @media only screen and (max-width: 520px) {
+        .experience-element {
+            grid-template-columns: 100%;
+        }
+    }
+    
+    @media only screen and (max-width: 650px) {
+        .footer-component {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        tr:nth-child(2n+1) {
+            font-size: 20px;
+        }
+        tr:nth-child(2n) {
+            font-size: 20px;
+        }
+    }
+    
+    @media only screen and (max-width: 350px) {
+        .footer-component {
+            grid-template-columns: 100%;
+        }
+    }
+    /* ========= /media ======== */
